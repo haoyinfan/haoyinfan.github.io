@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next pisces use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,19 +79,14 @@
 
 
 
-<meta name="description" content="title: Physics based NN for IR fusionApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/08/13/Physics-based-NN-for-IR-fusion/index.html">
+<meta property="og:title" content="test8.19">
+<meta property="og:url" content="http://yoursite.com/2019/08/19/test8-19/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: Physics based NN for IR fusionApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/08/13/Physics-based-NN-for-IR-fusion/images/RGBNIR%20Pictures.png">
-<meta property="og:updated_time" content="2019-08-15T01:09:04.208Z">
+<meta property="og:updated_time" content="2019-08-19T22:01:34.743Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: Physics based NN for IR fusionApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/13/Physics-based-NN-for-IR-fusion/images/RGBNIR%20Pictures.png">
+<meta name="twitter:title" content="test8.19">
 
 
 
@@ -99,7 +94,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -121,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/13/Physics-based-NN-for-IR-fusion/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/19/test8-19/">
 
 
 
 
 
-  <title> | Hexo</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>test8.19 | Hexo</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -234,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/Physics-based-NN-for-IR-fusion/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/19/test8-19/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -251,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">test8.19</h1>
         
 
         <div class="post-meta">
@@ -263,8 +258,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-13T17:01:37-07:00">
-                2019-08-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-19T15:01:34-07:00">
+                2019-08-19
               </time>
             
 
@@ -301,14 +296,7 @@
       
 
       
-        <hr>
-<h2 id="title-Physics-based-NN-for-IR-fusion"><a href="#title-Physics-based-NN-for-IR-fusion" class="headerlink" title="title: Physics based NN for IR fusion"></a>title: Physics based NN for IR fusion</h2><h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><h3 id="Physics-model"><a href="#Physics-model" class="headerlink" title="Physics model"></a>Physics model</h3><script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><h3 id="Our-method"><a href="#Our-method" class="headerlink" title="Our method"></a>Our method</h3><h4 id="DCP-guided-residual-learning"><a href="#DCP-guided-residual-learning" class="headerlink" title="DCP-guided residual learning"></a>DCP-guided residual learning</h4><script type="math/tex; mode=display">J^{dark} (x)=min</script><script type="math/tex; mode=display">\begin{equation*}\label{eq4}%\vspace{-0.1cm}
-\begin{split}
-  &\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\
-  &s.t. \quad \mathbf{J_{rec}} = \mathop{\arg}\mathop{\min}_\mathbf{J} ~ \lambda\|f(\mathbf{J})-f(\mathbf{I_{NIR}})\|^2 + (1-\lambda)\|f(\mathbf{J})-f(\mathbf{I_{DCP}})\|^2 \\ & \quad\quad\quad\quad\quad\quad\quad\quad\quad + \mu \Phi(\mathbf{x}; \Theta) + \nu \Psi(\mathbf{J}; \mathbf{I_{NIR}})
-\end{split}
-\end{equation*}</script><p><img src="images/RGBNIR Pictures.png" alt></p>
-
+        
       
     </div>
     
@@ -341,6 +329,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/19/Physics-based-NN-for-IR-fusion/" rel="prev" title="Physics based NN for IR fusion">
+                Physics based NN for IR fusion <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -392,17 +384,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -417,7 +400,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -444,22 +427,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Physics-based-NN-for-IR-fusion"><span class="nav-number">1.</span> <span class="nav-text">title: Physics based NN for IR fusion</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Approach"><span class="nav-number"></span> <span class="nav-text">Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Physics-model"><span class="nav-number">0.1.</span> <span class="nav-text">Physics model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Our-method"><span class="nav-number">0.2.</span> <span class="nav-text">Our method</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DCP-guided-residual-learning"><span class="nav-number">0.2.1.</span> <span class="nav-text">DCP-guided residual learning</span></a></li></ol></li></ol></li></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -492,7 +459,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -592,6 +559,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -654,8 +628,6 @@
   
 
   
-  
-
 
   
 
