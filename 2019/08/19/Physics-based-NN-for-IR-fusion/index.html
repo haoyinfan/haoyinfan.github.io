@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="Approach I(x)=J(x)t(x)+L_\infty(1-t(x)) DCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\   &amp;s.t. \quad \">
+<meta name="description" content="Physics based model Fog silumation">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Physics based NN for IR fusion">
 <meta property="og:url" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/index.html">
 <meta property="og:site_name" content="Physics Based NN for IR Fusion">
-<meta property="og:description" content="Approach I(x)=J(x)t(x)+L_\infty(1-t(x)) DCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\   &amp;s.t. \quad \">
+<meta property="og:description" content="Physics based model Fog silumation">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/illustration.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/RGBNIR%20Picture.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/Forward%20Model.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/Inverse%20Problem.png">
-<meta property="og:updated_time" content="2019-08-28T04:48:06.765Z">
+<meta property="og:updated_time" content="2019-08-28T04:55:35.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Physics based NN for IR fusion">
-<meta name="twitter:description" content="Approach I(x)=J(x)t(x)+L_\infty(1-t(x)) DCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\   &amp;s.t. \quad \">
+<meta name="twitter:description" content="Physics based model Fog silumation">
 <meta name="twitter:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/illustration.png">
 
 
@@ -304,15 +304,19 @@
       
 
       
-        <h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><!-- ### Physics model -->
-<script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><!-- ### Our method -->
-<p>DCP-guided residual learning<br><!-- $$J^{dark} (x)=min$$ --></p>
-<script type="math/tex; mode=display">\begin{equation*}\label{eq4}%\vspace{-0.1cm}
+        <!-- # Approach
+<!-- ### Physics model -->
+<!-- $$I(x)=J(x)t(x)+L_\infty(1-t(x))$$ -->
+<!-- ### Our method -->
+<!-- DCP-guided residual learning -->
+<!-- $$J^{dark} (x)=min$$ -->
+<!-- $$\begin{equation*}\label{eq4}%\vspace{-0.1cm}
 \begin{split}
   &\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\
   &s.t. \quad \mathbf{J_{rec}} = \mathop{\arg}\mathop{\min}_\mathbf{J} ~ \lambda\|f(\mathbf{J})-f(\mathbf{I_{NIR}})\|^2 + (1-\lambda)\|f(\mathbf{J})-f(\mathbf{I_{DCP}})\|^2 \\ & \quad\quad\quad\quad\quad\quad\quad\quad\quad + \mu \Phi(\mathbf{x}; \Theta) + \nu \Psi(\mathbf{J}; \mathbf{I_{NIR}})
 \end{split}
-\end{equation*}</script><h1 id="Physics-based-model"><a href="#Physics-based-model" class="headerlink" title="Physics based model"></a>Physics based model</h1><p><img src="images/illustration.png" alt></p>
+\end{equation*}$$ --> 
+<h1 id="Physics-based-model"><a href="#Physics-based-model" class="headerlink" title="Physics based model"></a>Physics based model</h1><p><img src="images/illustration.png" alt></p>
 <h1 id="Fog-silumation"><a href="#Fog-silumation" class="headerlink" title="Fog silumation"></a>Fog silumation</h1><p><img src="images/RGBNIR Picture.png" alt><br><img src="images/Forward Model.png" alt><br><img src="images/Inverse Problem.png" alt></p>
 
       
@@ -444,7 +448,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Approach"><span class="nav-number">1.</span> <span class="nav-text">Approach</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Physics-based-model"><span class="nav-number">2.</span> <span class="nav-text">Physics based model</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fog-silumation"><span class="nav-number">3.</span> <span class="nav-text">Fog silumation</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Physics-based-model"><span class="nav-number">1.</span> <span class="nav-text">Physics based model</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fog-silumation"><span class="nav-number">2.</span> <span class="nav-text">Fog silumation</span></a></li></ol></div>
             
 
           </div>
