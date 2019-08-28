@@ -88,7 +88,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/illustration.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/RGBNIR%20Picture.png">
-<meta property="og:updated_time" content="2019-08-28T03:35:20.139Z">
+<meta property="og:updated_time" content="2019-08-28T03:39:51.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Physics based NN for IR fusion">
 <meta name="twitter:description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt">
@@ -302,13 +302,14 @@
       
 
       
-        <h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><h3 id="Physics-model"><a href="#Physics-model" class="headerlink" title="Physics model"></a>Physics model</h3><script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><h3 id="Our-method"><a href="#Our-method" class="headerlink" title="Our method"></a>Our method</h3><h4 id="DCP-guided-residual-learning"><a href="#DCP-guided-residual-learning" class="headerlink" title="DCP-guided residual learning"></a>DCP-guided residual learning</h4><!-- $$J^{dark} (x)=min$$ -->
+        <h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><h3 id="Physics-model"><a href="#Physics-model" class="headerlink" title="Physics model"></a>Physics model</h3><script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><h3 id="Our-method"><a href="#Our-method" class="headerlink" title="Our method"></a>Our method</h3><p>DCP-guided residual learning<br><!-- $$J^{dark} (x)=min$$ --></p>
 <script type="math/tex; mode=display">\begin{equation*}\label{eq4}%\vspace{-0.1cm}
 \begin{split}
   &\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\
   &s.t. \quad \mathbf{J_{rec}} = \mathop{\arg}\mathop{\min}_\mathbf{J} ~ \lambda\|f(\mathbf{J})-f(\mathbf{I_{NIR}})\|^2 + (1-\lambda)\|f(\mathbf{J})-f(\mathbf{I_{DCP}})\|^2 \\ & \quad\quad\quad\quad\quad\quad\quad\quad\quad + \mu \Phi(\mathbf{x}; \Theta) + \nu \Psi(\mathbf{J}; \mathbf{I_{NIR}})
 \end{split}
-\end{equation*}</script><h1 id="Figures"><a href="#Figures" class="headerlink" title="Figures"></a>Figures</h1><p><img src="images/illustration.png" alt><br><img src="images/RGBNIR Picture.png" alt></p>
+\end{equation*}</script><h1 id="Physics-based-model"><a href="#Physics-based-model" class="headerlink" title="Physics based model"></a>Physics based model</h1><p><img src="images/illustration.png" alt></p>
+<h1 id="Fog-silumation"><a href="#Fog-silumation" class="headerlink" title="Fog silumation"></a>Fog silumation</h1><p><img src="images/RGBNIR Picture.png" alt></p>
 
       
     </div>
@@ -439,7 +440,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Approach"><span class="nav-number">1.</span> <span class="nav-text">Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Physics-model"><span class="nav-number">1.0.1.</span> <span class="nav-text">Physics model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Our-method"><span class="nav-number">1.0.2.</span> <span class="nav-text">Our method</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DCP-guided-residual-learning"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">DCP-guided residual learning</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Figures"><span class="nav-number">2.</span> <span class="nav-text">Figures</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Approach"><span class="nav-number">1.</span> <span class="nav-text">Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Physics-model"><span class="nav-number">1.0.1.</span> <span class="nav-text">Physics model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Our-method"><span class="nav-number">1.0.2.</span> <span class="nav-text">Our method</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Physics-based-model"><span class="nav-number">2.</span> <span class="nav-text">Physics based model</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fog-silumation"><span class="nav-number">3.</span> <span class="nav-text">Fog silumation</span></a></li></div>
             
 
           </div>
