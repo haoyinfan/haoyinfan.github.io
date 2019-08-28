@@ -79,18 +79,19 @@
 
 
 
-<meta name="description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}">
+<meta name="description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Physics based NN for IR fusion">
 <meta property="og:url" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/index.html">
 <meta property="og:site_name" content="Physics Based NN for IR Fusion">
-<meta property="og:description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}">
+<meta property="og:description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/illustration.png">
-<meta property="og:updated_time" content="2019-08-28T03:32:32.326Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/RGBNIR%20Picture.png">
+<meta property="og:updated_time" content="2019-08-28T03:35:20.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Physics based NN for IR fusion">
-<meta name="twitter:description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learningJ^{dark} (x)=min\begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}">
+<meta name="twitter:description" content="ApproachPhysics modelI(x)=J(x)t(x)+L_\infty(1-t(x))Our methodDCP-guided residual learning \begin{equation*}\label{eq4}%\vspace{-0.1cm} \begin{split}   &amp;\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt">
 <meta name="twitter:image" content="http://yoursite.com/2019/08/19/Physics-based-NN-for-IR-fusion/images/illustration.png">
 
 
@@ -301,12 +302,13 @@
       
 
       
-        <h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><h3 id="Physics-model"><a href="#Physics-model" class="headerlink" title="Physics model"></a>Physics model</h3><script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><h3 id="Our-method"><a href="#Our-method" class="headerlink" title="Our method"></a>Our method</h3><h4 id="DCP-guided-residual-learning"><a href="#DCP-guided-residual-learning" class="headerlink" title="DCP-guided residual learning"></a>DCP-guided residual learning</h4><script type="math/tex; mode=display">J^{dark} (x)=min</script><script type="math/tex; mode=display">\begin{equation*}\label{eq4}%\vspace{-0.1cm}
+        <h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><h3 id="Physics-model"><a href="#Physics-model" class="headerlink" title="Physics model"></a>Physics model</h3><script type="math/tex; mode=display">I(x)=J(x)t(x)+L_\infty(1-t(x))</script><h3 id="Our-method"><a href="#Our-method" class="headerlink" title="Our method"></a>Our method</h3><h4 id="DCP-guided-residual-learning"><a href="#DCP-guided-residual-learning" class="headerlink" title="DCP-guided residual learning"></a>DCP-guided residual learning</h4><!-- $$J^{dark} (x)=min$$ -->
+<script type="math/tex; mode=display">\begin{equation*}\label{eq4}%\vspace{-0.1cm}
 \begin{split}
   &\min_\Theta \ell(\mathbf{J_{rec}}, \mathbf{J_{gt}})\\
   &s.t. \quad \mathbf{J_{rec}} = \mathop{\arg}\mathop{\min}_\mathbf{J} ~ \lambda\|f(\mathbf{J})-f(\mathbf{I_{NIR}})\|^2 + (1-\lambda)\|f(\mathbf{J})-f(\mathbf{I_{DCP}})\|^2 \\ & \quad\quad\quad\quad\quad\quad\quad\quad\quad + \mu \Phi(\mathbf{x}; \Theta) + \nu \Psi(\mathbf{J}; \mathbf{I_{NIR}})
 \end{split}
-\end{equation*}</script><h1 id="Figures"><a href="#Figures" class="headerlink" title="Figures"></a>Figures</h1><p><img src="images/illustration.png" alt></p>
+\end{equation*}</script><h1 id="Figures"><a href="#Figures" class="headerlink" title="Figures"></a>Figures</h1><p><img src="images/illustration.png" alt><br><img src="images/RGBNIR Picture.png" alt></p>
 
       
     </div>
